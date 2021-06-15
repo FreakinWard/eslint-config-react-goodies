@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-boilerplate-lint",
+  "version": "0.1.0",
+  "description": "This repo serves as a boilerplate to configure lint for nextjs apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config prettier.config.js",
+    "format:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config prettier.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.3.1"
+  }
+}
