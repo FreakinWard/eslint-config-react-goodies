@@ -3,7 +3,7 @@ describe('index', () => {
     // arrange
     // TODO: is there a way to avoid duplicate rules here?
     const expectedRules = {
-      'prettier/prettier': 'error', // Use our prettier.config.js file as source
+      'import/prefer-default-export': 'error',
     };
 
     // act
