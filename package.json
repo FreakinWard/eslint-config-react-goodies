@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-myconfig",
+  "name": "@freakin-ward/eslint-config-boilerplate",
   "version": "0.1.0",
   "description": "This repo serves as a boilerplate to configure lint for nextjs apps",
   "main": "index.js",
