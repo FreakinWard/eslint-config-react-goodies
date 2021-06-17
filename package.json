@@ -4,7 +4,8 @@
   "description": "ESLint and Prettier config",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "test:cover": "jest --coverage"
   },
   "repository": {
     "type": "git",
