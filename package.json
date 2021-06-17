@@ -1,24 +1,26 @@
 {
-  "name": "@freakin-ward/eslint-config-boilerplate",
-  "version": "0.1.1",
-  "description": "This repo serves as a boilerplate to configure lint for nextjs apps",
+  "name": "eslint-config-react-goodies",
+  "version": "0.1.0",
+  "description": "ESLint and Prettier config",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "format": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config prettier.config.js",
-    "format:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config prettier.config.js"
+    "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FreakinWard/nextjs-boilerplate-lint.git"
+    "url": "git+https://github.com/FreakinWard/eslint-config-react-goodies.git"
   },
   "keywords": [
+    "react",
     "nextjs",
+    "config",
+    "ecmascript",
+    "eslint",
+    "javascript",
     "lint",
-    "eslint"
+    "prettier"
   ],
-  "author": "aaron.l.ward@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FreakinWard/nextjs-boilerplate-lint/issues"
   },
