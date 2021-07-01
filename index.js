@@ -1,5 +1,5 @@
 module.exports = {
-  root: true, // Make sure eslint picks up the config at the root of the directory
+  root: true, // Make sure eslint picks up the configs at the root of the directory
   parserOptions: {
     ecmaVersion: 2020, // Use the latest ecmascript standard
     sourceType: 'module', // Allows using import/export statements
@@ -19,13 +19,13 @@ module.exports = {
   plugins: ['simple-import-sort', 'prettier', 'import'],
   extends: [
     'eslint:recommended',
-    './config/rules/react',
-    './config/rules/jest',
-    'plugin:prettier/recommended', // Make this the last element so prettier config overrides other formatting rules
+    './configs/rules/react',
+    './configs/rules/jest',
+    'plugin:prettier/recommended', // Make this the last element so prettier configs overrides other formatting rules
   ],
   rules: {
     'import/prefer-default-export': 'error',
-    'prettier/prettier': 'error', // Use our prettier.config.js file as source
+    'prettier/prettier': 'error', // Use our prettier.configs.js file as source
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
