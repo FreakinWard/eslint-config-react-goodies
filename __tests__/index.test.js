@@ -23,6 +23,7 @@ describe('index', () => {
       extends: [
         'eslint:recommended',
         './configs/rules/react',
+        './configs/rules/a11y',
         './configs/rules/jest',
         'plugin:prettier/recommended',
       ],

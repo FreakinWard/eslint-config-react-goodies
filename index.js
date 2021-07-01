@@ -20,6 +20,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     './configs/rules/react',
+    './configs/rules/a11y',
     './configs/rules/jest',
     'plugin:prettier/recommended', // Make this the last element so prettier configs overrides other formatting rules
   ],
