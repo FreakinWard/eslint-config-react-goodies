@@ -22,18 +22,12 @@ describe('index', () => {
       plugins: ['simple-import-sort', 'prettier', 'import'],
       extends: [
         'eslint:recommended',
-        './src/prettier',
+        './src/base',
         './src/react',
         './src/a11y',
         './src/jest',
-        'plugin:prettier/recommended',
+        './src/prettier',
       ],
-      rules: {
-        'import/prefer-default-export': 'error',
-        'prettier/prettier': 'error',
-        'simple-import-sort/imports': 'error',
-        'simple-import-sort/exports': 'error',
-      },
     };
 
     // act
