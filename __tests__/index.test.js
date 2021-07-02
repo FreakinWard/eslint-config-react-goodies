@@ -1,5 +1,5 @@
 describe('index', () => {
-  it('should return expected configs', () => {
+  it('should return expected src', () => {
     // arrange
     const expectedConfig = {
       root: true,
@@ -22,10 +22,10 @@ describe('index', () => {
       plugins: ['simple-import-sort', 'prettier', 'import'],
       extends: [
         'eslint:recommended',
-        './configs/rules/prettier',
-        './configs/rules/react',
-        './configs/rules/a11y',
-        './configs/rules/jest',
+        './src/prettier',
+        './src/react',
+        './src/a11y',
+        './src/jest',
         'plugin:prettier/recommended',
       ],
       rules: {

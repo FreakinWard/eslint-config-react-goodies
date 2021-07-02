@@ -19,15 +19,13 @@ module.exports = {
   plugins: ['simple-import-sort', 'prettier', 'import'],
   extends: [
     'eslint:recommended',
-    './configs/rules/prettier',
-    './configs/rules/react',
-    './configs/rules/a11y',
-    './configs/rules/jest',
-    'plugin:prettier/recommended', // Make this the last element so prettier configs overrides other formatting rules
+    './src/react',
+    './src/a11y',
+    './src/jest',
+    './src/prettier', // Make this the last element so prettier src overrides other formatting rules
   ],
   rules: {
     'import/prefer-default-export': 'error',
-    'prettier/prettier': 'error', // Use our prettier.configs.js file as source
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
   },
