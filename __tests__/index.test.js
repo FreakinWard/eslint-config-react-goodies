@@ -22,6 +22,7 @@ describe('index', () => {
       plugins: ['simple-import-sort', 'prettier', 'import'],
       extends: [
         'eslint:recommended',
+        './configs/rules/prettier',
         './configs/rules/react',
         './configs/rules/a11y',
         './configs/rules/jest',
