@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-goodies",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ESLint and Prettier config",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^27.0.4",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "semantic-release": "^17.4.4"
   },
   "peerDependencies": {
     "eslint": ">= 7",
