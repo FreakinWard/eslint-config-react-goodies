@@ -28,11 +28,16 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Run the tests
-      run: npm run test:cover
+#    - name: Run the tests
+#      run: npm run test:cover
+#
+#    - name: Upload coverage to Codecov
+#      uses: codecov/codecov-action@v1
+#      with:
+#        token: ${{ secrets.CODECOV_TOKEN }}
+#        fail_ci_if_error: true
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        fail_ci_if_error: true
+    - name: Create new release
+      env:
+        GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: npx semantic-release
