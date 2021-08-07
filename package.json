@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-goodies",
-  "version": "0.0.0-development",
+  "version": "0.0.0-semantically-released",
   "description": "ESLint and Prettier config",
   "main": "index.js",
   "scripts": {
