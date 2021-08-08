@@ -1,15 +1,19 @@
 {
   "name": "eslint-config-react-goodies",
-  "version": "0.1.1",
+  "version": "0.0.0-semantically-released",
   "description": "ESLint and Prettier config",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:cover": "jest --coverage"
+    "test:cover": "jest --coverage",
+    "semantic-release": "semantic-release",
+    "prepare": "husky install",
+    "pre-commit": "exec < /dev/tty && git cz --hook || true\n",
+    "commit-msg": "npx --no-install commitlint --edit "
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FreakinWard/eslint-config-react-goodies.git"
+    "url": "https://github.com/FreakinWard/eslint-config-react-goodies.git"
   },
   "keywords": [
     "react",
@@ -27,14 +31,21 @@
   },
   "homepage": "https://github.com/FreakinWard/nextjs-boilerplate-lint#readme",
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^7.0.1",
     "jest": "^27.0.4",
-    "prettier": "^2.3.1"
+    "prettier": "^2.3.1",
+    "semantic-release": "^17.4.4",
+    "semantic-release-cli": "^5.4.3"
   },
   "peerDependencies": {
     "eslint": ">= 7",
@@ -44,5 +55,10 @@
     "eslint-plugin-prettier": ">= 3",
     "eslint-plugin-simple-import-sort": ">= 7",
     "prettier": ">= 2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
